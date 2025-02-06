@@ -2,9 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-}
-
-body {
+    font-family: 'Roboto', sans-serif;
     background: rgb(233, 233, 240);
     background: linear-gradient(90deg, rgb(219, 235, 233) 0%, rgb(136, 202, 223) 35%, rgb(238, 242, 243) 100%);
     display: flex;
@@ -27,11 +25,36 @@ body {
 }
 
 .footer-icon {
-    width: 65px; /* Define a largura do ícone */
+    width: 50px; /* Define a largura do ícone */
+    height: 50px; /* Define a altura do ícone */
     margin-right: 10px; /* Espaçamento à direita da imagem */
-    color: transparent;
-    border-radius: 60%;
-    ;
+    background-color: transparent;
+    border-radius: 50%; /* Torna a imagem arredondada */
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens no canto superior direito */
+    background: rgb(233, 233, 240);
+    background: linear-gradient(90deg, rgb(219, 235, 233) 0%, rgb(29, 196, 247) 35%, rgba(0,212,255,1) 100%);
+    padding: 10px;
+}
+
+.menu-item {
+    list-style: none;
+    margin: 0 15px;
+    width: 20%;
+}
+
+.menu-icon {
+    width: 30px; /* Define a largura do ícone do menu */
+    height: 30px; /* Define a altura do ícone do menu */
+    background-color: transparent; /* Fundo transparente */
+    cursor: pointer; /* Troca o cursor ao passar o mouse */
+}
+
+.menu-icon:hover {
+    cursor: pointer; /* Troca o cursor ao passar o mouse */
 }
 
 .main {
@@ -40,14 +63,6 @@ body {
     flex-wrap: nowrap;
     width: 85%;
     margin: 0 auto;
-}
-
-.menu {
-    display: flex;
-    justify-content: end; /* Distribui os itens igualmente */
-    background: rgb(233, 233, 240);
-    background: linear-gradient(90deg, rgb(219, 235, 233) 0%, rgb(29, 196, 247) 35%, rgba(0,212,255,1) 100%);
-    padding: 10px;
 }
 
 .content {
